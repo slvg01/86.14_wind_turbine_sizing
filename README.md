@@ -31,4 +31,4 @@ This project optimizes wind turbine design using **Lagrangian multipliers**, con
 1. Open **MATLAB** or **VS Code** with the MATLAB extension  
 2. Load the script:  
    ```matlab
-   wind_turbine_sizing.m
+   optim.m
