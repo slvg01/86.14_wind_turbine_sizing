@@ -10,7 +10,7 @@ This project optimizes wind turbine design using **Lagrangian multipliers**, con
 ### 💰 **Budget Constraint**  
 - The total cost is determined by:  
   - The **cost per square meter** of the rotor (**€/m²**)  
-  - The **cost per 1 m/s of wind speed capture** (**€/m/s**)  
+  - The **cost per addittional 1 m/s of wind speed capture** (**€/m/s**)  
   - A **total budget limit**  
 
 ### 🏗 **Structural Stability Constraint**  
