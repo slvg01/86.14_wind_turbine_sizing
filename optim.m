@@ -3,9 +3,14 @@ cost_m2 = 300; % cost of additional square meter for the rotor (€/m²)
 cost_ms = 1e6; % cost of additional wind speed capture (€/m/s)
 budget = 1e7; % Budget total (€)
 stab = 1500; % stability factor
-syms x y a lambda mu % declare the lagrangian variables for symbolic use
 
-% budget and stability constraints
+% declare the lagrangian variables for symbolic use : 
+% x is the rotor surface, y is the wind speed, 
+% a is slack squared adjustment variable for the stability constraint equation
+% lambda and mu are the lagrange multipliers
+syms x y a lambda mu 
+
+% budget and stability constraints equations 
 g = cost_m2 * x + cost_ms * y - budget;
 h = x - stab * y + a^2;
 
